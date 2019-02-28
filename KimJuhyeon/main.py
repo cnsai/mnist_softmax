@@ -46,6 +46,5 @@ for i in range(10000):
         loss, acc = sess.run([cross_entropy, accuracy], feed_dict={x: batch_xs, y_: batch_ys})
         print("Step : {:5}\tLoss: {:.3f}\tAcc: {:.2%}".format(i, loss, acc))
 
-
 ##### 정확도 출력 #####
 print(sess.run(accuracy, feed_dict={x: mnist.test.images, y_: mnist.test.labels}))
